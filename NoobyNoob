@@ -1,0 +1,297 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ESP = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopTitle = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local DesignLine = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local SecondaryFrame = Instance.new("Frame")
+local Categorys = Instance.new("Frame")
+local ESP_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Utilities = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ToggleUILabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local ESPS = Instance.new("Frame")
+local PlayerEsp = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local misc = Instance.new("Frame")
+local EggClaimer = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local EggEsp = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+
+--Properties:
+
+ESP.Name = "ESP"
+ESP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ESP
+MainFrame.BackgroundColor3 = Color3.fromRGB(44, 43, 42)
+MainFrame.Position = UDim2.new(0.311982274, 0, 0.348958313, 0)
+MainFrame.Size = UDim2.new(0.375499338, 0, 0.302083343, 0)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = MainFrame
+
+TopTitle.Name = "TopTitle"
+TopTitle.Parent = MainFrame
+TopTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopTitle.BackgroundTransparency = 1.000
+TopTitle.Position = UDim2.new(0.0248227641, 0, 7.4064296e-08, 0)
+TopTitle.Size = UDim2.new(0.953900754, 0, 0.114942528, 0)
+TopTitle.Font = Enum.Font.Code
+TopTitle.Text = "NoobyNoob's ESP | Designed by Vylnium"
+TopTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+TopTitle.TextScaled = true
+TopTitle.TextSize = 14.000
+TopTitle.TextStrokeTransparency = 0.000
+TopTitle.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = TopTitle
+
+DesignLine.Name = "DesignLine"
+DesignLine.Parent = MainFrame
+DesignLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine.Position = UDim2.new(0.0248226952, 0, 0.114942528, 0)
+DesignLine.Size = UDim2.new(0.953900754, 0, 0.0114942528, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 100000)
+UICorner_3.Parent = DesignLine
+
+SecondaryFrame.Name = "SecondaryFrame"
+SecondaryFrame.Parent = MainFrame
+SecondaryFrame.Active = true
+SecondaryFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecondaryFrame.BackgroundTransparency = 1.000
+SecondaryFrame.Position = UDim2.new(0.0248226952, 0, 0.172413796, 0)
+SecondaryFrame.Size = UDim2.new(0.953900754, 0, 0.781609178, 0)
+
+Categorys.Name = "Categorys"
+Categorys.Parent = SecondaryFrame
+Categorys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Categorys.BackgroundTransparency = 1.000
+Categorys.Size = UDim2.new(0.25, 0, 1, 0)
+
+ESP_2.Name = "ESP"
+ESP_2.Parent = Categorys
+ESP_2.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+ESP_2.Size = UDim2.new(1, 0, 0.150000006, 0)
+ESP_2.Font = Enum.Font.Code
+ESP_2.Text = "ESP"
+ESP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP_2.TextScaled = true
+ESP_2.TextSize = 14.000
+ESP_2.TextStrokeTransparency = 0.000
+ESP_2.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 6)
+UICorner_4.Parent = ESP_2
+
+Utilities.Name = "Utilities"
+Utilities.Parent = Categorys
+Utilities.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+Utilities.Size = UDim2.new(1, 0, 0.150000006, 0)
+Utilities.Font = Enum.Font.Code
+Utilities.Text = "MISC."
+Utilities.TextColor3 = Color3.fromRGB(255, 255, 255)
+Utilities.TextScaled = true
+Utilities.TextSize = 14.000
+Utilities.TextStrokeTransparency = 0.000
+Utilities.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 6)
+UICorner_5.Parent = Utilities
+
+ToggleUILabel.Name = "ToggleUILabel"
+ToggleUILabel.Parent = Categorys
+ToggleUILabel.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+ToggleUILabel.Size = UDim2.new(1, 0, 0.150000006, 0)
+ToggleUILabel.Font = Enum.Font.Code
+ToggleUILabel.Text = "Toggle UI: Left Control"
+ToggleUILabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleUILabel.TextScaled = true
+ToggleUILabel.TextSize = 14.000
+ToggleUILabel.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_6.Parent = ToggleUILabel
+
+UIListLayout.Parent = Categorys
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0199999996, 0)
+
+ESPS.Name = "ESPS"
+ESPS.Parent = SecondaryFrame
+ESPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPS.BackgroundTransparency = 1.000
+ESPS.Position = UDim2.new(0.300000042, 0, 0, 0)
+ESPS.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
+ESPS.Visible = false
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = ESPS
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+PlayerEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
+PlayerEsp.Font = Enum.Font.Code
+PlayerEsp.Text = "Player ESP"
+PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerEsp.TextScaled = true
+PlayerEsp.TextSize = 14.000
+PlayerEsp.TextStrokeTransparency = 0.000
+PlayerEsp.TextWrapped = true
+
+UICorner_7.Parent = PlayerEsp
+
+UIListLayout_2.Parent = ESPS
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0.0199999996, 0)
+
+misc.Name = "misc"
+misc.Parent = SecondaryFrame
+misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+misc.BackgroundTransparency = 1.000
+misc.Position = UDim2.new(0.300000042, 0, 0, 0)
+misc.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
+misc.Visible = false
+
+EggClaimer.Name = "EggClaimer"
+EggClaimer.Parent = misc
+EggClaimer.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+EggClaimer.Size = UDim2.new(1, 0, 0.150000006, 0)
+EggClaimer.Font = Enum.Font.Code
+EggClaimer.Text = "Egg Claimer"
+EggClaimer.TextColor3 = Color3.fromRGB(255, 255, 255)
+EggClaimer.TextScaled = true
+EggClaimer.TextSize = 14.000
+EggClaimer.TextStrokeTransparency = 0.000
+EggClaimer.TextWrapped = true
+
+UICorner_8.Parent = EggClaimer
+
+UIListLayout_3.Parent = misc
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0.0199999996, 0)
+
+EggEsp.Name = "EggEsp"
+EggEsp.Parent = misc
+EggEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+EggEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
+EggEsp.Font = Enum.Font.Code
+EggEsp.Text = "Egg Esp"
+EggEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+EggEsp.TextScaled = true
+EggEsp.TextSize = 14.000
+EggEsp.TextStrokeTransparency = 0.000
+EggEsp.TextWrapped = true
+
+UICorner_9.Parent = EggEsp
+
+-- Scripts:
+
+local function SFKUY_fake_script() -- ESP.KeybindClose 
+	local script = Instance.new('LocalScript', ESP)
+
+	local FrameObject = script.Parent.MainFrame
+	local Open = false
+	
+	local PositionClosed = UDim2.new(0,0,0,0)
+	local PositionOpen = UDim2.new(0.375, 0,0.302, 0)
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.LeftControl then
+			if Open then
+				FrameObject:TweenSize((PositionClosed), "Out", "Bounce")
+				Open = false
+			else
+				Open = true
+				FrameObject:TweenSize((PositionOpen), "Out", "Back")
+			end
+		end
+	end)
+end
+coroutine.wrap(SFKUY_fake_script)()
+local function XUDFE_fake_script() -- EggEsp.EggEsp 
+	local script = Instance.new('LocalScript', EggEsp)
+
+	local Esp = "Eggs" -- change to folder of what u want an esp of
+	local Btn = script.Parent
+	local Tgl = false
+	local Loc = game.Workspace:FindFirstChild(Esp)
+	Btn.MouseButton1Click:Connect(function()
+		if Tgl == false then
+			Tgl = true
+			while Tgl == true do
+				for i,v in pairs(Loc:GetChildren()) do
+					local High = Instance.new("Highlight")
+					High.Parent = v
+					High.FillTransparency = 0.1
+					High.OutlineColor = Color3.new(255, 0, 255)
+				end
+				wait(3)
+				for i,v in pairs(Loc:GetChildren()) do
+					for g,p in pairs(v:GetChildren()) do
+						if p:IsA("Highlight")  then
+							p:Remove()
+						end
+					end
+				end
+			end
+		elseif Tgl == true then
+			Tgl = false
+			for i,v in pairs(game.Workspace.Locations:GetChildren()) do
+				for n,part in pairs(v:GetChildren()) do
+					if part:IsA("Highlight") then
+						part:Remove()
+					end
+				end
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(XUDFE_fake_script)()
+local function SRPDJ_fake_script() -- MainFrame.CategoryOpeningScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local category = script.Parent.SecondaryFrame.Categorys
+	local esp = script.Parent.SecondaryFrame.ESPS
+	local espbutton = script.Parent.SecondaryFrame.Categorys.ESP
+	local misc = script.Parent.SecondaryFrame.Categorys.Utilities
+	local miscs = script.Parent.SecondaryFrame.misc
+	
+	
+	espbutton.MouseButton1Click:Connect(function()
+		esp.Visible = not esp.Visible
+		if esp.Visible == true then
+			miscs.Visible = false
+		end
+	end)
+	misc.MouseButton1Click:Connect(function()
+		miscs.Visible = not miscs.Visible
+		if miscs.Visible == true then
+			esp.Visible = false
+		end
+	end)
+	
+	
+end
+coroutine.wrap(SRPDJ_fake_script)()
