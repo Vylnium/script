@@ -8,27 +8,51 @@ local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TopTitle = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-local DesignLine = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
 local SecondaryFrame = Instance.new("Frame")
 local Categorys = Instance.new("Frame")
-local ESP_2 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local Utilities = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local ToggleUILabel = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local ListStuff = Instance.new("Folder")
+local Home = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local UIListLayout = Instance.new("UIListLayout")
+local ESP_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local MiscButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Pages = Instance.new("Folder")
 local ESPS = Instance.new("Frame")
 local PlayerEsp = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local misc = Instance.new("Frame")
-local EggClaimer = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local Toggle = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local HomePage = Instance.new("Frame")
+local Profile = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local DesigningHome = Instance.new("Folder")
+local DesignLine = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local GroupRank = Instance.new("TextLabel")
+local GroupLink = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Quit = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local misc = Instance.new("Frame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local EggEsp = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
+local Toggle_2 = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local DesigningStuff = Instance.new("Folder")
+local DesignLine_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local DesignLine_3 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -40,7 +64,7 @@ MainFrame.Name = "MainFrame"
 MainFrame.Parent = ESP
 MainFrame.BackgroundColor3 = Color3.fromRGB(44, 43, 42)
 MainFrame.Position = UDim2.new(0.311982274, 0, 0.348958313, 0)
-MainFrame.Size = UDim2.new(0.375499338, 0, 0.302083343, 0)
+MainFrame.Size = UDim2.new(0.375499308, 0, 0.302083343, 0)
 
 UICorner.CornerRadius = UDim.new(0, 9)
 UICorner.Parent = MainFrame
@@ -50,9 +74,9 @@ TopTitle.Parent = MainFrame
 TopTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TopTitle.BackgroundTransparency = 1.000
 TopTitle.Position = UDim2.new(0.0248227641, 0, 7.4064296e-08, 0)
-TopTitle.Size = UDim2.new(0.953900754, 0, 0.114942528, 0)
-TopTitle.Font = Enum.Font.Code
-TopTitle.Text = "NoobyNoob's ESP | Designed by Vylnium"
+TopTitle.Size = UDim2.new(0.953900695, 0, 0.114942528, 0)
+TopTitle.Font = Enum.Font.Oswald
+TopTitle.Text = "Nooby Hub | Designed by Vylnium"
 TopTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 TopTitle.TextScaled = true
 TopTitle.TextSize = 14.000
@@ -62,22 +86,13 @@ TopTitle.TextWrapped = true
 UICorner_2.CornerRadius = UDim.new(0, 9)
 UICorner_2.Parent = TopTitle
 
-DesignLine.Name = "DesignLine"
-DesignLine.Parent = MainFrame
-DesignLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DesignLine.Position = UDim2.new(0.0248226952, 0, 0.114942528, 0)
-DesignLine.Size = UDim2.new(0.953900754, 0, 0.0114942528, 0)
-
-UICorner_3.CornerRadius = UDim.new(0, 100000)
-UICorner_3.Parent = DesignLine
-
 SecondaryFrame.Name = "SecondaryFrame"
 SecondaryFrame.Parent = MainFrame
 SecondaryFrame.Active = true
 SecondaryFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SecondaryFrame.BackgroundTransparency = 1.000
 SecondaryFrame.Position = UDim2.new(0.0248226952, 0, 0.172413796, 0)
-SecondaryFrame.Size = UDim2.new(0.953900754, 0, 0.781609178, 0)
+SecondaryFrame.Size = UDim2.new(0.953900695, 0, 0.781609178, 0)
 
 Categorys.Name = "Categorys"
 Categorys.Parent = SecondaryFrame
@@ -85,11 +100,51 @@ Categorys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Categorys.BackgroundTransparency = 1.000
 Categorys.Size = UDim2.new(0.25, 0, 1, 0)
 
+ToggleUILabel.Name = "ToggleUILabel"
+ToggleUILabel.Parent = Categorys
+ToggleUILabel.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+ToggleUILabel.BackgroundTransparency = 1.000
+ToggleUILabel.Position = UDim2.new(0, 0, 0.906675816, 0)
+ToggleUILabel.Size = UDim2.new(1, 0, 0.150000006, 0)
+ToggleUILabel.Font = Enum.Font.Oswald
+ToggleUILabel.Text = "Toggle UI: Left Control"
+ToggleUILabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleUILabel.TextScaled = true
+ToggleUILabel.TextSize = 14.000
+ToggleUILabel.TextTransparency = 0.800
+ToggleUILabel.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 6)
+UICorner_3.Parent = ToggleUILabel
+
+ListStuff.Name = "ListStuff"
+ListStuff.Parent = Categorys
+
+Home.Name = "Home"
+Home.Parent = ListStuff
+Home.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+Home.Size = UDim2.new(1, 0, 0.150000006, 0)
+Home.Font = Enum.Font.Oswald
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextStrokeTransparency = 0.000
+Home.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 6)
+UICorner_4.Parent = Home
+
+UIListLayout.Parent = ListStuff
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0199999996, 0)
+
 ESP_2.Name = "ESP"
-ESP_2.Parent = Categorys
+ESP_2.Parent = ListStuff
 ESP_2.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
 ESP_2.Size = UDim2.new(1, 0, 0.150000006, 0)
-ESP_2.Font = Enum.Font.Code
+ESP_2.Font = Enum.Font.Oswald
 ESP_2.Text = "ESP"
 ESP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP_2.TextScaled = true
@@ -97,45 +152,30 @@ ESP_2.TextSize = 14.000
 ESP_2.TextStrokeTransparency = 0.000
 ESP_2.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0, 6)
-UICorner_4.Parent = ESP_2
-
-Utilities.Name = "Utilities"
-Utilities.Parent = Categorys
-Utilities.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
-Utilities.Size = UDim2.new(1, 0, 0.150000006, 0)
-Utilities.Font = Enum.Font.Code
-Utilities.Text = "MISC."
-Utilities.TextColor3 = Color3.fromRGB(255, 255, 255)
-Utilities.TextScaled = true
-Utilities.TextSize = 14.000
-Utilities.TextStrokeTransparency = 0.000
-Utilities.TextWrapped = true
-
 UICorner_5.CornerRadius = UDim.new(0, 6)
-UICorner_5.Parent = Utilities
+UICorner_5.Parent = ESP_2
 
-ToggleUILabel.Name = "ToggleUILabel"
-ToggleUILabel.Parent = Categorys
-ToggleUILabel.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
-ToggleUILabel.Size = UDim2.new(1, 0, 0.150000006, 0)
-ToggleUILabel.Font = Enum.Font.Code
-ToggleUILabel.Text = "Toggle UI: Left Control"
-ToggleUILabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleUILabel.TextScaled = true
-ToggleUILabel.TextSize = 14.000
-ToggleUILabel.TextWrapped = true
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = ListStuff
+MiscButton.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+MiscButton.Position = UDim2.new(0, 0, 0.608590603, 0)
+MiscButton.Size = UDim2.new(1, 0, 0.150000006, 0)
+MiscButton.Font = Enum.Font.Oswald
+MiscButton.Text = "MISC."
+MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.TextScaled = true
+MiscButton.TextSize = 14.000
+MiscButton.TextStrokeTransparency = 0.000
+MiscButton.TextWrapped = true
 
 UICorner_6.CornerRadius = UDim.new(0, 6)
-UICorner_6.Parent = ToggleUILabel
+UICorner_6.Parent = MiscButton
 
-UIListLayout.Parent = Categorys
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0.0199999996, 0)
+Pages.Name = "Pages"
+Pages.Parent = SecondaryFrame
 
 ESPS.Name = "ESPS"
-ESPS.Parent = SecondaryFrame
+ESPS.Parent = Pages
 ESPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ESPS.BackgroundTransparency = 1.000
 ESPS.Position = UDim2.new(0.300000042, 0, 0, 0)
@@ -146,42 +186,134 @@ PlayerEsp.Name = "PlayerEsp"
 PlayerEsp.Parent = ESPS
 PlayerEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
 PlayerEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
-PlayerEsp.Font = Enum.Font.Code
+PlayerEsp.Font = Enum.Font.Oswald
 PlayerEsp.Text = "Player ESP"
 PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlayerEsp.TextScaled = true
 PlayerEsp.TextSize = 14.000
 PlayerEsp.TextStrokeTransparency = 0.000
 PlayerEsp.TextWrapped = true
+PlayerEsp.TextXAlignment = Enum.TextXAlignment.Left
+PlayerEsp.TextYAlignment = Enum.TextYAlignment.Bottom
 
 UICorner_7.Parent = PlayerEsp
+
+UIPadding.Parent = PlayerEsp
+UIPadding.PaddingLeft = UDim.new(0, 4)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = PlayerEsp
+Toggle.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 30)
+UICorner_8.Parent = Toggle
 
 UIListLayout_2.Parent = ESPS
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout_2.Padding = UDim.new(0.0199999996, 0)
 
+HomePage.Name = "HomePage"
+HomePage.Parent = Pages
+HomePage.BackgroundColor3 = Color3.fromRGB(179, 179, 179)
+HomePage.BackgroundTransparency = 0.900
+HomePage.Position = UDim2.new(0.300000042, 0, 0, 0)
+HomePage.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
+
+Profile.Name = "Profile"
+Profile.Parent = HomePage
+Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Profile.BackgroundTransparency = 0.950
+Profile.BorderSizePixel = 0
+Profile.Position = UDim2.new(0.0362574235, 0, 0.0563049875, 0)
+Profile.Size = UDim2.new(0.241716161, 0, 0.375366569, 0)
+Profile.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_9.CornerRadius = UDim.new(0, 30)
+UICorner_9.Parent = Profile
+
+Username.Name = "Username"
+Username.Parent = HomePage
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.34258306, 0, 0.0563049838, 0)
+Username.Size = UDim2.new(0.624433398, 0, 0.187683284, 0)
+Username.Font = Enum.Font.Oswald
+Username.Text = "Na"
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextScaled = true
+Username.TextSize = 16.000
+Username.TextWrapped = true
+
+DesigningHome.Name = "DesigningHome"
+DesigningHome.Parent = HomePage
+
+DesignLine.Name = "DesignLine"
+DesignLine.Parent = DesigningHome
+DesignLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine.Position = UDim2.new(0.343082339, 0, 0.246320754, 0)
+DesignLine.Size = UDim2.new(0.627810836, 0, 0.0164358802, 0)
+
+UICorner_10.CornerRadius = UDim.new(0, 100000)
+UICorner_10.Parent = DesignLine
+
+UICorner_11.Parent = HomePage
+
+GroupRank.Name = "GroupRank"
+GroupRank.Parent = HomePage
+GroupRank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GroupRank.BackgroundTransparency = 1.000
+GroupRank.BorderSizePixel = 0
+GroupRank.Position = UDim2.new(0.346459627, 0, 0.262756586, 0)
+GroupRank.Size = UDim2.new(0.624433577, 0, 0.189999998, 0)
+GroupRank.Font = Enum.Font.Oswald
+GroupRank.Text = "NA"
+GroupRank.TextColor3 = Color3.fromRGB(0, 0, 0)
+GroupRank.TextScaled = true
+GroupRank.TextSize = 16.000
+GroupRank.TextWrapped = true
+
+GroupLink.Name = "GroupLink"
+GroupLink.Parent = HomePage
+GroupLink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GroupLink.BackgroundTransparency = 0.900
+GroupLink.Position = UDim2.new(0.0348901004, 0, 0.69611448, 0)
+GroupLink.Size = UDim2.new(0.349035919, 0, 0.192258805, 0)
+GroupLink.Font = Enum.Font.SourceSans
+GroupLink.TextColor3 = Color3.fromRGB(0, 0, 0)
+GroupLink.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 20)
+UICorner_12.Parent = GroupLink
+
+Quit.Name = "Quit"
+Quit.Parent = HomePage
+Quit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Quit.BackgroundTransparency = 0.900
+Quit.Position = UDim2.new(0.615613222, 0, 0.69611454, 0)
+Quit.Size = UDim2.new(0.349035919, 0, 0.192258805, 0)
+Quit.Font = Enum.Font.SourceSans
+Quit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Quit.TextSize = 14.000
+Quit.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 20)
+UICorner_13.Parent = Quit
+
 misc.Name = "misc"
-misc.Parent = SecondaryFrame
+misc.Parent = Pages
 misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 misc.BackgroundTransparency = 1.000
 misc.Position = UDim2.new(0.300000042, 0, 0, 0)
 misc.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
 misc.Visible = false
-
-EggClaimer.Name = "EggClaimer"
-EggClaimer.Parent = misc
-EggClaimer.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
-EggClaimer.Size = UDim2.new(1, 0, 0.150000006, 0)
-EggClaimer.Font = Enum.Font.Code
-EggClaimer.Text = "Egg Claimer"
-EggClaimer.TextColor3 = Color3.fromRGB(255, 255, 255)
-EggClaimer.TextScaled = true
-EggClaimer.TextSize = 14.000
-EggClaimer.TextStrokeTransparency = 0.000
-EggClaimer.TextWrapped = true
-
-UICorner_8.Parent = EggClaimer
 
 UIListLayout_3.Parent = misc
 UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -192,106 +324,351 @@ EggEsp.Name = "EggEsp"
 EggEsp.Parent = misc
 EggEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
 EggEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
-EggEsp.Font = Enum.Font.Code
+EggEsp.Font = Enum.Font.Oswald
 EggEsp.Text = "Egg Esp"
 EggEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
 EggEsp.TextScaled = true
 EggEsp.TextSize = 14.000
 EggEsp.TextStrokeTransparency = 0.000
 EggEsp.TextWrapped = true
+EggEsp.TextXAlignment = Enum.TextXAlignment.Left
+EggEsp.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UICorner_9.Parent = EggEsp
+UICorner_14.Parent = EggEsp
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = EggEsp
+Toggle_2.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_2.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_2.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_2.Font = Enum.Font.SourceSans
+Toggle_2.Text = ""
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 30)
+UICorner_15.Parent = Toggle_2
+
+UIPadding_2.Parent = EggEsp
+UIPadding_2.PaddingLeft = UDim.new(0, 4)
+
+DesigningStuff.Name = "DesigningStuff"
+DesigningStuff.Parent = MainFrame
+
+DesignLine_2.Name = "DesignLine"
+DesignLine_2.Parent = DesigningStuff
+DesignLine_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine_2.Position = UDim2.new(0.0248226952, 0, 0.114942528, 0)
+DesignLine_2.Size = UDim2.new(0.953900695, 0, 0.0114942528, 0)
+
+UICorner_16.CornerRadius = UDim.new(0, 100000)
+UICorner_16.Parent = DesignLine_2
+
+DesignLine_3.Name = "DesignLine"
+DesignLine_3.Parent = DesigningStuff
+DesignLine_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine_3.Position = UDim2.new(0.280374825, 0, 0.168335184, 0)
+DesignLine_3.Size = UDim2.new(0.00538004143, 0, 0.786328197, 0)
+
+UICorner_17.CornerRadius = UDim.new(0, 100000)
+UICorner_17.Parent = DesignLine_3
 
 -- Scripts:
 
-local function SFKUY_fake_script() -- ESP.KeybindClose 
+local function QPNOE_fake_script() -- ESP.KeybindClose 
 	local script = Instance.new('LocalScript', ESP)
 
 	local FrameObject = script.Parent.MainFrame
 	local Open = false
 	
+	
 	local PositionClosed = UDim2.new(0,0,0,0)
 	local PositionOpen = UDim2.new(0.375, 0,0.302, 0)
-	
 	local UserInputService = game:GetService("UserInputService")
 	
 	UserInputService.InputBegan:Connect(function(KeyCode)
 		if KeyCode.KeyCode == Enum.KeyCode.LeftControl then
 			if Open then
 				FrameObject:TweenSize((PositionClosed), "Out", "Bounce")
+				FrameObject.SecondaryFrame.Pages.HomePage.Profile.Visible = false
+				wait(1)
+				FrameObject.Visible = false
 				Open = false
 			else
-				Open = true
+				
+				FrameObject.Visible = true
+				wait(0.2)
 				FrameObject:TweenSize((PositionOpen), "Out", "Back")
+				Open = true
+				FrameObject.SecondaryFrame.Pages.HomePage.Profile.Visible = true
 			end
 		end
 	end)
 end
-coroutine.wrap(SFKUY_fake_script)()
-local function XUDFE_fake_script() -- EggEsp.EggEsp 
+coroutine.wrap(QPNOE_fake_script)()
+local function HUIERX_fake_script() -- PlayerEsp.PlayerEsp 
+	local script = Instance.new('LocalScript', PlayerEsp)
+
+	local Esp = "Players" -- change to folder of what u want an esp of
+	local Btn = script.Parent
+	local Tgl = false
+	local Loc = game:GetService(Esp)
+	-- name text gui
+	-- Instances:
+	local BillboardGui = Instance.new("BillboardGui")
+	local TextLabel = Instance.new("TextLabel")
+	--Properties:
+	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BillboardGui.Active = true
+	BillboardGui.AlwaysOnTop = true
+	BillboardGui.LightInfluence = 1
+	BillboardGui.Size = UDim2.new(0, 150, 0, 35)
+	BillboardGui.StudsOffset = Vector3.new(0, 2, 0)
+	
+	TextLabel.Parent = BillboardGui
+	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.Size = UDim2.new(1, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Object"
+	TextLabel.TextColor3 = Color3.new(1, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14
+	TextLabel.TextStrokeTransparency = 0
+	TextLabel.TextWrapped = true
+	-- esp button fctn
+	Btn.MouseButton1Click:Connect(function()
+		if Tgl == false then
+			Tgl = true
+			while Tgl == true do
+				for i,v in pairs(Loc:GetChildren()) do
+					if v ~= game.Players.LocalPlayer then
+						local High = Instance.new("Highlight")
+						local BillC = BillboardGui:Clone()
+						local Char = v.Character
+						High.FillTransparency = 0.1
+						High.OutlineColor = Color3.new(255, 0, 255)
+						High.Parent = Char
+						BillC.Parent = Char.Head
+						BillC.Adornee = Char.Head
+						BillC.TextLabel.Text = v.Name .. " Health: " .. v.Character.Humanoid.Health
+					end
+				end
+				wait(3)
+				for i,v in pairs(Loc:GetChildren()) do
+					local char = v.Character
+					if char:FindFirstChildWhichIsA("Highlight") and char.Head:FindFirstChildWhichIsA("BillboardGui"):Destroy() then
+						char:FindFirstChildWhichIsA("Highlight"):Destroy()
+						char.Head.FindFirstChildWhichIsA("BillboardGui"):Destroy()
+					end
+				end
+			end
+		elseif Tgl == true then
+			Tgl = false
+			for i,v in pairs(Loc:GetChildren()) do
+				local char = v.Character
+				if char:FindFirstChildWhichIsA("Highlight") and char.Head:FindFirstChildWhichIsA("BillboardGui"):Destroy() then
+				char:FindFirstChildWhichIsA("Highlight"):Destroy()
+					char.Head:FindFirstChildWhichIsA("BillboardGui"):Destroy()
+				else
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(HUIERX_fake_script)()
+local function WVLV_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size60x60
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0,60,0,60)
+	
+end
+coroutine.wrap(WVLV_fake_script)()
+local function UCVCV_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = "Hello "..player.Name.."!"
+	end
+end
+coroutine.wrap(UCVCV_fake_script)()
+local function NCTCYI_fake_script() -- GroupLink.LocalScript 
+	local script = Instance.new('LocalScript', GroupLink)
+
+	local plr = game.Players.LocalPlayer
+	local btn = script.Parent
+	local startGui = game:GetService("StarterGui")
+	
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size60x60
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	
+	btn.MouseButton1Up:Connect(function()
+		setclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
+		wait(0.2)
+		toclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
+		wait(0.3)
+		startGui:SetCore("SendNotification",{
+			Title = " Group link copied to Clipboard!",
+			Text = "Close Gui and re-execute after you have joined the group.",
+			Icon = content,
+			Duration = 5,
+			Button1 = "OK",
+		})
+	end)
+end
+coroutine.wrap(NCTCYI_fake_script)()
+local function REZSQB_fake_script() -- EggEsp.EggEsp 
 	local script = Instance.new('LocalScript', EggEsp)
 
 	local Esp = "Eggs" -- change to folder of what u want an esp of
 	local Btn = script.Parent
 	local Tgl = false
 	local Loc = game.Workspace:FindFirstChild(Esp)
+	-- Name Text Gui
+	-- Instances:
+	local BillboardGui = Instance.new("BillboardGui")
+	local TextLabel = Instance.new("TextLabel")
+	--Properties:
+	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BillboardGui.Active = true
+	BillboardGui.AlwaysOnTop = true
+	BillboardGui.LightInfluence = 1
+	BillboardGui.Size = UDim2.new(0, 150, 0, 35)
+	BillboardGui.StudsOffset = Vector3.new(0, 2, 0)
+	
+	TextLabel.Parent = BillboardGui
+	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.Size = UDim2.new(1, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Object"
+	TextLabel.TextColor3 = Color3.new(1, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14
+	TextLabel.TextStrokeTransparency = 0
+	TextLabel.TextWrapped = true
+	-- ESP Button Function
 	Btn.MouseButton1Click:Connect(function()
 		if Tgl == false then
 			Tgl = true
 			while Tgl == true do
 				for i,v in pairs(Loc:GetChildren()) do
+					local Dist = math.round((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Handle.Position).magnitude)
 					local High = Instance.new("Highlight")
+					local BillC = BillboardGui:Clone()
 					High.Parent = v
 					High.FillTransparency = 0.1
 					High.OutlineColor = Color3.new(255, 0, 255)
+					BillC.Parent =  v
+					BillC.Adornee = v
+					BillC.TextLabel.Text = "EGG,  Distance: " .. Dist
 				end
 				wait(3)
-				for i,v in pairs(Loc:GetChildren()) do
-					for g,p in pairs(v:GetChildren()) do
-						if p:IsA("Highlight")  then
-							p:Remove()
-						end
+				for i,v in pairs(Loc:GetDescendants()) do
+					if v:IsA("Highlight") or v:IsA("BillboardGui") then
+						v:Destroy()
 					end
 				end
 			end
 		elseif Tgl == true then
 			Tgl = false
-			for i,v in pairs(game.Workspace.Locations:GetChildren()) do
+			for i,v in pairs(Loc:GetChildren()) do
 				for n,part in pairs(v:GetChildren()) do
-					if part:IsA("Highlight") then
-						part:Remove()
+					if part:IsA("Highlight") or part:IsA("BillboardGui") then
+						part:Destroy()
 					end
 				end
 			end
 		end
 	end)
-	
-	
 end
-coroutine.wrap(XUDFE_fake_script)()
-local function SRPDJ_fake_script() -- MainFrame.CategoryOpeningScript 
+coroutine.wrap(REZSQB_fake_script)()
+local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local category = script.Parent.SecondaryFrame.Categorys
-	local esp = script.Parent.SecondaryFrame.ESPS
-	local espbutton = script.Parent.SecondaryFrame.Categorys.ESP
-	local misc = script.Parent.SecondaryFrame.Categorys.Utilities
-	local miscs = script.Parent.SecondaryFrame.misc
+	local esp = script.Parent.SecondaryFrame.Pages.ESPS
+	local espbutton = script.Parent.SecondaryFrame.Categorys.ListStuff.ESP
+	local misc = script.Parent.SecondaryFrame.Categorys.ListStuff.MiscButton
+	local miscs = script.Parent.SecondaryFrame.Pages.misc
+	local home = script.Parent.SecondaryFrame.Pages.HomePage
+	local homebutton = script.Parent.SecondaryFrame.Categorys.ListStuff.Home
 	
 	
 	espbutton.MouseButton1Click:Connect(function()
 		esp.Visible = not esp.Visible
 		if esp.Visible == true then
 			miscs.Visible = false
+			if home.Visible == true then
+				home.Visible = false
+			end
 		end
 	end)
 	misc.MouseButton1Click:Connect(function()
 		miscs.Visible = not miscs.Visible
 		if miscs.Visible == true then
 			esp.Visible = false
+			if home.Visible == true then
+				home.Visible = false
+			end
+		end
+	end)
+	
+	homebutton.MouseButton1Click:Connect(function()
+		home.Visible = true
+		if home.Visible == true then
+			miscs.Visible = false
+			if home.Visible == true then
+				esp.Visible = false
+			end
 		end
 	end)
 	
 	
+	
 end
-coroutine.wrap(SRPDJ_fake_script)()
+coroutine.wrap(XIRUA_fake_script)()
+local function XGPIB_fake_script() -- ESP.UiManager 
+	local script = Instance.new('LocalScript', ESP)
+
+	-- gui refrences
+	local gui = script.Parent;local Frame = gui.MainFrame;local main = Frame.SecondaryFrame;local cats = main.Categorys;local pages = main.Pages;local esps = pages.ESPS;local Home = pages.HomePage;local misc = pages.misc;local groupRank = Home.GroupRank;
+	local plaer = game.Players.LocalPlayer
+	local grp = 11965777
+	local pRank = plaer:GetRoleInGroup(11965777)
+	groupRank.Text = pRank
+	if pRank == 0 then
+		
+	end
+	
+	--[[
+	local function FullAllow()
+		if plaer:GetRoleInGroup(grp > 0) then
+			gui.Parent = game:GetService("CoreGui")
+			gui.Enabled = true
+		end
+	end]]
+end
+coroutine.wrap(XGPIB_fake_script)()
