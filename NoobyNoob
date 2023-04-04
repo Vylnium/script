@@ -16,43 +16,77 @@ local ListStuff = Instance.new("Folder")
 local Home = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local UIListLayout = Instance.new("UIListLayout")
-local ESP_2 = Instance.new("TextButton")
+local AutoPickup = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local MiscButton = Instance.new("TextButton")
+local ESP_2 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Pages = Instance.new("Folder")
-local ESPS = Instance.new("Frame")
-local PlayerEsp = Instance.new("TextButton")
+local MiscButton = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local Pages = Instance.new("Folder")
+local AutoPickupPage = Instance.new("Frame")
+local AutoPickupAll = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local UIPadding = Instance.new("UIPadding")
 local Toggle = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local UIListLayout_2 = Instance.new("UIListLayout")
+local AutoPickupEssence = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local Toggle_2 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local AutoPickupGoldBars = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIPadding_3 = Instance.new("UIPadding")
+local Toggle_3 = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local AutoPickupRawGold = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIPadding_4 = Instance.new("UIPadding")
+local Toggle_4 = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local AutoPickupCrystals = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIPadding_5 = Instance.new("UIPadding")
+local Toggle_5 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local AutoPickupBloodfruit = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UIPadding_6 = Instance.new("UIPadding")
+local Toggle_6 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
 local HomePage = Instance.new("Frame")
 local Profile = Instance.new("ImageLabel")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local Username = Instance.new("TextLabel")
 local DesigningHome = Instance.new("Folder")
 local DesignLine = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local GroupRank = Instance.new("TextLabel")
 local GroupLink = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local Quit = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local misc = Instance.new("Frame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local EggEsp = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local Toggle_2 = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
-local UIPadding_2 = Instance.new("UIPadding")
+local UICorner_25 = Instance.new("UICorner")
+local Toggle_7 = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local UIPadding_7 = Instance.new("UIPadding")
+local ESPS = Instance.new("Frame")
+local PlayerEsp = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UIPadding_8 = Instance.new("UIPadding")
+local Toggle_8 = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local UIListLayout_4 = Instance.new("UIListLayout")
 local DesigningStuff = Instance.new("Folder")
 local DesignLine_2 = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
 local DesignLine_3 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
 
 --Properties:
 
@@ -140,6 +174,21 @@ UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
 
+AutoPickup.Name = "AutoPickup"
+AutoPickup.Parent = ListStuff
+AutoPickup.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickup.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickup.Font = Enum.Font.Oswald
+AutoPickup.Text = "Auto-Pickup"
+AutoPickup.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickup.TextScaled = true
+AutoPickup.TextSize = 14.000
+AutoPickup.TextStrokeTransparency = 0.000
+AutoPickup.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 6)
+UICorner_5.Parent = AutoPickup
+
 ESP_2.Name = "ESP"
 ESP_2.Parent = ListStuff
 ESP_2.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
@@ -152,8 +201,8 @@ ESP_2.TextSize = 14.000
 ESP_2.TextStrokeTransparency = 0.000
 ESP_2.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 6)
-UICorner_5.Parent = ESP_2
+UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_6.Parent = ESP_2
 
 MiscButton.Name = "MiscButton"
 MiscButton.Parent = ListStuff
@@ -168,41 +217,41 @@ MiscButton.TextSize = 14.000
 MiscButton.TextStrokeTransparency = 0.000
 MiscButton.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0, 6)
-UICorner_6.Parent = MiscButton
+UICorner_7.CornerRadius = UDim.new(0, 6)
+UICorner_7.Parent = MiscButton
 
 Pages.Name = "Pages"
 Pages.Parent = SecondaryFrame
 
-ESPS.Name = "ESPS"
-ESPS.Parent = Pages
-ESPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESPS.BackgroundTransparency = 1.000
-ESPS.Position = UDim2.new(0.300000042, 0, 0, 0)
-ESPS.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
-ESPS.Visible = false
+AutoPickupPage.Name = "AutoPickupPage"
+AutoPickupPage.Parent = Pages
+AutoPickupPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupPage.BackgroundTransparency = 1.000
+AutoPickupPage.Position = UDim2.new(0.300000042, 0, 0, 0)
+AutoPickupPage.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
+AutoPickupPage.Visible = false
 
-PlayerEsp.Name = "PlayerEsp"
-PlayerEsp.Parent = ESPS
-PlayerEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
-PlayerEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
-PlayerEsp.Font = Enum.Font.Oswald
-PlayerEsp.Text = "Player ESP"
-PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerEsp.TextScaled = true
-PlayerEsp.TextSize = 14.000
-PlayerEsp.TextStrokeTransparency = 0.000
-PlayerEsp.TextWrapped = true
-PlayerEsp.TextXAlignment = Enum.TextXAlignment.Left
-PlayerEsp.TextYAlignment = Enum.TextYAlignment.Bottom
+AutoPickupAll.Name = "AutoPickupAll"
+AutoPickupAll.Parent = AutoPickupPage
+AutoPickupAll.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupAll.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupAll.Font = Enum.Font.Oswald
+AutoPickupAll.Text = "AutoPickupItems"
+AutoPickupAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupAll.TextScaled = true
+AutoPickupAll.TextSize = 14.000
+AutoPickupAll.TextStrokeTransparency = 0.000
+AutoPickupAll.TextWrapped = true
+AutoPickupAll.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupAll.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UICorner_7.Parent = PlayerEsp
+UICorner_8.Parent = AutoPickupAll
 
-UIPadding.Parent = PlayerEsp
+UIPadding.Parent = AutoPickupAll
 UIPadding.PaddingLeft = UDim.new(0, 4)
 
 Toggle.Name = "Toggle"
-Toggle.Parent = PlayerEsp
+Toggle.Parent = AutoPickupAll
 Toggle.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
 Toggle.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
 Toggle.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
@@ -211,13 +260,173 @@ Toggle.Text = ""
 Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.TextSize = 14.000
 
-UICorner_8.CornerRadius = UDim.new(0, 30)
-UICorner_8.Parent = Toggle
+UICorner_9.CornerRadius = UDim.new(0, 30)
+UICorner_9.Parent = Toggle
 
-UIListLayout_2.Parent = ESPS
+UIListLayout_2.Parent = AutoPickupPage
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout_2.Padding = UDim.new(0.0199999996, 0)
+
+AutoPickupEssence.Name = "AutoPickupEssence"
+AutoPickupEssence.Parent = AutoPickupPage
+AutoPickupEssence.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupEssence.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupEssence.Font = Enum.Font.Oswald
+AutoPickupEssence.Text = "Auto-Pickup Essence"
+AutoPickupEssence.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupEssence.TextScaled = true
+AutoPickupEssence.TextSize = 14.000
+AutoPickupEssence.TextStrokeTransparency = 0.000
+AutoPickupEssence.TextWrapped = true
+AutoPickupEssence.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupEssence.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_10.Parent = AutoPickupEssence
+
+UIPadding_2.Parent = AutoPickupEssence
+UIPadding_2.PaddingLeft = UDim.new(0, 4)
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = AutoPickupEssence
+Toggle_2.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_2.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_2.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_2.Font = Enum.Font.SourceSans
+Toggle_2.Text = ""
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 30)
+UICorner_11.Parent = Toggle_2
+
+AutoPickupGoldBars.Name = "AutoPickupGoldBars"
+AutoPickupGoldBars.Parent = AutoPickupPage
+AutoPickupGoldBars.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupGoldBars.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupGoldBars.Font = Enum.Font.Oswald
+AutoPickupGoldBars.Text = "Auto-Pickup Gold"
+AutoPickupGoldBars.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupGoldBars.TextScaled = true
+AutoPickupGoldBars.TextSize = 14.000
+AutoPickupGoldBars.TextStrokeTransparency = 0.000
+AutoPickupGoldBars.TextWrapped = true
+AutoPickupGoldBars.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupGoldBars.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_12.Parent = AutoPickupGoldBars
+
+UIPadding_3.Parent = AutoPickupGoldBars
+UIPadding_3.PaddingLeft = UDim.new(0, 4)
+
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = AutoPickupGoldBars
+Toggle_3.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_3.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_3.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_3.Font = Enum.Font.SourceSans
+Toggle_3.Text = ""
+Toggle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_3.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 30)
+UICorner_13.Parent = Toggle_3
+
+AutoPickupRawGold.Name = "AutoPickupRawGold"
+AutoPickupRawGold.Parent = AutoPickupPage
+AutoPickupRawGold.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupRawGold.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupRawGold.Font = Enum.Font.Oswald
+AutoPickupRawGold.Text = "Auto-Pickup Raw Gold"
+AutoPickupRawGold.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupRawGold.TextScaled = true
+AutoPickupRawGold.TextSize = 14.000
+AutoPickupRawGold.TextStrokeTransparency = 0.000
+AutoPickupRawGold.TextWrapped = true
+AutoPickupRawGold.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupRawGold.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_14.Parent = AutoPickupRawGold
+
+UIPadding_4.Parent = AutoPickupRawGold
+UIPadding_4.PaddingLeft = UDim.new(0, 4)
+
+Toggle_4.Name = "Toggle"
+Toggle_4.Parent = AutoPickupRawGold
+Toggle_4.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_4.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_4.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_4.Font = Enum.Font.SourceSans
+Toggle_4.Text = ""
+Toggle_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_4.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 30)
+UICorner_15.Parent = Toggle_4
+
+AutoPickupCrystals.Name = "AutoPickupCrystals"
+AutoPickupCrystals.Parent = AutoPickupPage
+AutoPickupCrystals.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupCrystals.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupCrystals.Font = Enum.Font.Oswald
+AutoPickupCrystals.Text = "Auto-Pickup Crystals"
+AutoPickupCrystals.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupCrystals.TextScaled = true
+AutoPickupCrystals.TextSize = 14.000
+AutoPickupCrystals.TextStrokeTransparency = 0.000
+AutoPickupCrystals.TextWrapped = true
+AutoPickupCrystals.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupCrystals.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_16.Parent = AutoPickupCrystals
+
+UIPadding_5.Parent = AutoPickupCrystals
+UIPadding_5.PaddingLeft = UDim.new(0, 4)
+
+Toggle_5.Name = "Toggle"
+Toggle_5.Parent = AutoPickupCrystals
+Toggle_5.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_5.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_5.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_5.Font = Enum.Font.SourceSans
+Toggle_5.Text = ""
+Toggle_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_5.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 30)
+UICorner_17.Parent = Toggle_5
+
+AutoPickupBloodfruit.Name = "AutoPickupBloodfruit"
+AutoPickupBloodfruit.Parent = AutoPickupPage
+AutoPickupBloodfruit.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+AutoPickupBloodfruit.Size = UDim2.new(1, 0, 0.150000006, 0)
+AutoPickupBloodfruit.Font = Enum.Font.Oswald
+AutoPickupBloodfruit.Text = "Auto-Pickup Bloodfruit"
+AutoPickupBloodfruit.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPickupBloodfruit.TextScaled = true
+AutoPickupBloodfruit.TextSize = 14.000
+AutoPickupBloodfruit.TextStrokeTransparency = 0.000
+AutoPickupBloodfruit.TextWrapped = true
+AutoPickupBloodfruit.TextXAlignment = Enum.TextXAlignment.Left
+AutoPickupBloodfruit.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_18.Parent = AutoPickupBloodfruit
+
+UIPadding_6.Parent = AutoPickupBloodfruit
+UIPadding_6.PaddingLeft = UDim.new(0, 4)
+
+Toggle_6.Name = "Toggle"
+Toggle_6.Parent = AutoPickupBloodfruit
+Toggle_6.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_6.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_6.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_6.Font = Enum.Font.SourceSans
+Toggle_6.Text = ""
+Toggle_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_6.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(0, 30)
+UICorner_19.Parent = Toggle_6
 
 HomePage.Name = "HomePage"
 HomePage.Parent = Pages
@@ -235,8 +444,8 @@ Profile.Position = UDim2.new(0.0362574235, 0, 0.0563049875, 0)
 Profile.Size = UDim2.new(0.241716161, 0, 0.375366569, 0)
 Profile.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_9.CornerRadius = UDim.new(0, 30)
-UICorner_9.Parent = Profile
+UICorner_20.CornerRadius = UDim.new(0, 9999999)
+UICorner_20.Parent = Profile
 
 Username.Name = "Username"
 Username.Parent = HomePage
@@ -261,10 +470,10 @@ DesignLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DesignLine.Position = UDim2.new(0.343082339, 0, 0.246320754, 0)
 DesignLine.Size = UDim2.new(0.627810836, 0, 0.0164358802, 0)
 
-UICorner_10.CornerRadius = UDim.new(0, 100000)
-UICorner_10.Parent = DesignLine
+UICorner_21.CornerRadius = UDim.new(0, 100000)
+UICorner_21.Parent = DesignLine
 
-UICorner_11.Parent = HomePage
+UICorner_22.Parent = HomePage
 
 GroupRank.Name = "GroupRank"
 GroupRank.Parent = HomePage
@@ -290,8 +499,8 @@ GroupLink.Font = Enum.Font.SourceSans
 GroupLink.TextColor3 = Color3.fromRGB(0, 0, 0)
 GroupLink.TextSize = 14.000
 
-UICorner_12.CornerRadius = UDim.new(0, 20)
-UICorner_12.Parent = GroupLink
+UICorner_23.CornerRadius = UDim.new(0, 20)
+UICorner_23.Parent = GroupLink
 
 Quit.Name = "Quit"
 Quit.Parent = HomePage
@@ -304,8 +513,8 @@ Quit.TextColor3 = Color3.fromRGB(0, 0, 0)
 Quit.TextSize = 14.000
 Quit.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 20)
-UICorner_13.Parent = Quit
+UICorner_24.CornerRadius = UDim.new(0, 20)
+UICorner_24.Parent = Quit
 
 misc.Name = "misc"
 misc.Parent = Pages
@@ -334,23 +543,68 @@ EggEsp.TextWrapped = true
 EggEsp.TextXAlignment = Enum.TextXAlignment.Left
 EggEsp.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UICorner_14.Parent = EggEsp
+UICorner_25.Parent = EggEsp
 
-Toggle_2.Name = "Toggle"
-Toggle_2.Parent = EggEsp
-Toggle_2.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
-Toggle_2.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
-Toggle_2.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
-Toggle_2.Font = Enum.Font.SourceSans
-Toggle_2.Text = ""
-Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Toggle_2.TextSize = 14.000
+Toggle_7.Name = "Toggle"
+Toggle_7.Parent = EggEsp
+Toggle_7.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_7.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_7.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_7.Font = Enum.Font.SourceSans
+Toggle_7.Text = ""
+Toggle_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_7.TextSize = 14.000
 
-UICorner_15.CornerRadius = UDim.new(0, 30)
-UICorner_15.Parent = Toggle_2
+UICorner_26.CornerRadius = UDim.new(0, 30)
+UICorner_26.Parent = Toggle_7
 
-UIPadding_2.Parent = EggEsp
-UIPadding_2.PaddingLeft = UDim.new(0, 4)
+UIPadding_7.Parent = EggEsp
+UIPadding_7.PaddingLeft = UDim.new(0, 4)
+
+ESPS.Name = "ESPS"
+ESPS.Parent = Pages
+ESPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPS.BackgroundTransparency = 1.000
+ESPS.Position = UDim2.new(0.300000042, 0, 0, 0)
+ESPS.Size = UDim2.new(0.699999928, 0, 0.992647052, 0)
+ESPS.Visible = false
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = ESPS
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(28, 28, 27)
+PlayerEsp.Size = UDim2.new(1, 0, 0.150000006, 0)
+PlayerEsp.Font = Enum.Font.Oswald
+PlayerEsp.Text = "Player ESP"
+PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerEsp.TextScaled = true
+PlayerEsp.TextSize = 14.000
+PlayerEsp.TextStrokeTransparency = 0.000
+PlayerEsp.TextWrapped = true
+PlayerEsp.TextXAlignment = Enum.TextXAlignment.Left
+PlayerEsp.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_27.Parent = PlayerEsp
+
+UIPadding_8.Parent = PlayerEsp
+UIPadding_8.PaddingLeft = UDim.new(0, 4)
+
+Toggle_8.Name = "Toggle"
+Toggle_8.Parent = PlayerEsp
+Toggle_8.BackgroundColor3 = Color3.fromRGB(238, 31, 0)
+Toggle_8.Position = UDim2.new(0.90200001, 0, 0.121707395, 0)
+Toggle_8.Size = UDim2.new(0.0725148469, 0, 0.750733137, 0)
+Toggle_8.Font = Enum.Font.SourceSans
+Toggle_8.Text = ""
+Toggle_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_8.TextSize = 14.000
+
+UICorner_28.CornerRadius = UDim.new(0, 30)
+UICorner_28.Parent = Toggle_8
+
+UIListLayout_4.Parent = ESPS
+UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0.0199999996, 0)
 
 DesigningStuff.Name = "DesigningStuff"
 DesigningStuff.Parent = MainFrame
@@ -361,8 +615,8 @@ DesignLine_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DesignLine_2.Position = UDim2.new(0.0248226952, 0, 0.114942528, 0)
 DesignLine_2.Size = UDim2.new(0.953900695, 0, 0.0114942528, 0)
 
-UICorner_16.CornerRadius = UDim.new(0, 100000)
-UICorner_16.Parent = DesignLine_2
+UICorner_29.CornerRadius = UDim.new(0, 100000)
+UICorner_29.Parent = DesignLine_2
 
 DesignLine_3.Name = "DesignLine"
 DesignLine_3.Parent = DesigningStuff
@@ -370,12 +624,12 @@ DesignLine_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DesignLine_3.Position = UDim2.new(0.280374825, 0, 0.168335184, 0)
 DesignLine_3.Size = UDim2.new(0.00538004143, 0, 0.786328197, 0)
 
-UICorner_17.CornerRadius = UDim.new(0, 100000)
-UICorner_17.Parent = DesignLine_3
+UICorner_30.CornerRadius = UDim.new(0, 100000)
+UICorner_30.Parent = DesignLine_3
 
 -- Scripts:
 
-local function QPNOE_fake_script() -- ESP.KeybindClose 
+local function JCPUGDW_fake_script() -- ESP.KeybindClose 
 	local script = Instance.new('LocalScript', ESP)
 
 	local FrameObject = script.Parent.MainFrame
@@ -405,8 +659,133 @@ local function QPNOE_fake_script() -- ESP.KeybindClose
 		end
 	end)
 end
-coroutine.wrap(QPNOE_fake_script)()
-local function HUIERX_fake_script() -- PlayerEsp.PlayerEsp 
+coroutine.wrap(JCPUGDW_fake_script)()
+local function CZFT_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size60x60
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0,60,0,60)
+	
+end
+coroutine.wrap(CZFT_fake_script)()
+local function KYYFYC_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = "Hello "..player.Name.."!"
+	end
+end
+coroutine.wrap(KYYFYC_fake_script)()
+local function MEZRV_fake_script() -- GroupLink.LocalScript 
+	local script = Instance.new('LocalScript', GroupLink)
+
+	local plr = game.Players.LocalPlayer
+	local btn = script.Parent
+	local startGui = game:GetService("StarterGui")
+	
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size60x60
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	btn.MouseButton1Up:Connect(function()
+		setclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
+		wait(0.2)
+		toclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
+		wait(0.3)
+		startGui:SetCore("SendNotification",{
+			Title = " Group link copied to Clipboard!",
+			Text = "Close Gui and re-execute after you have joined the group.",
+			Icon = content,
+			Duration = 5,
+			Button1 = "OK",
+		})
+	end)
+end
+coroutine.wrap(MEZRV_fake_script)()
+local function IFLQWQ_fake_script() -- EggEsp.EggEsp 
+	local script = Instance.new('LocalScript', EggEsp)
+
+	local Esp = "Eggs" -- change to folder of what u want an esp of
+	local Btn = script.Parent
+	local Tgl = false
+	local Loc = game.Workspace:FindFirstChild(Esp)
+	-- Name Text Gui
+	-- Instances:
+	local BillboardGui = Instance.new("BillboardGui")
+	local TextLabel = Instance.new("TextLabel")
+	--Properties:
+	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BillboardGui.Active = true
+	BillboardGui.AlwaysOnTop = true
+	BillboardGui.LightInfluence = 1
+	BillboardGui.Size = UDim2.new(0, 150, 0, 35)
+	BillboardGui.StudsOffset = Vector3.new(0, 2, 0)
+	
+	TextLabel.Parent = BillboardGui
+	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.Size = UDim2.new(1, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Object"
+	TextLabel.TextColor3 = Color3.new(1, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14
+	TextLabel.TextStrokeTransparency = 0
+	TextLabel.TextWrapped = true
+	-- ESP Button Function
+	Btn.MouseButton1Click:Connect(function()
+		if Tgl == false then
+			Tgl = true
+			while Tgl == true do
+				for i,v in pairs(Loc:GetChildren()) do
+					local Dist = math.round((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Handle.Position).magnitude)
+					local High = Instance.new("Highlight")
+					local BillC = BillboardGui:Clone()
+					High.Parent = v
+					High.FillTransparency = 0.1
+					High.OutlineColor = Color3.new(255, 0, 255)
+					BillC.Parent =  v
+					BillC.Adornee = v
+					BillC.TextLabel.Text = "EGG,  Distance: " .. Dist
+				end
+				wait(3)
+				for i,v in pairs(Loc:GetDescendants()) do
+					if v:IsA("Highlight") or v:IsA("BillboardGui") then
+						v:Destroy()
+					end
+				end
+			end
+		elseif Tgl == true then
+			Tgl = false
+			for i,v in pairs(Loc:GetChildren()) do
+				for n,part in pairs(v:GetChildren()) do
+					if part:IsA("Highlight") or part:IsA("BillboardGui") then
+						part:Destroy()
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(IFLQWQ_fake_script)()
+local function UKKMQV_fake_script() -- PlayerEsp.PlayerEsp 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Esp = "Players" -- change to folder of what u want an esp of
@@ -476,136 +855,8 @@ local function HUIERX_fake_script() -- PlayerEsp.PlayerEsp
 		end
 	end)
 end
-coroutine.wrap(HUIERX_fake_script)()
-local function WVLV_fake_script() -- Profile.LocalScript 
-	local script = Instance.new('LocalScript', Profile)
-
-	local Players = game:GetService("Players")
-	
-	local player = Players.LocalPlayer
-	local userId = player.UserId
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size60x60
-	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	
-	local imageLabel = script.Parent
-	imageLabel.Image = content
-	imageLabel.Size = UDim2.new(0,60,0,60)
-	
-end
-coroutine.wrap(WVLV_fake_script)()
-local function UCVCV_fake_script() -- Username.LocalScript 
-	local script = Instance.new('LocalScript', Username)
-
-	local player = game.Players.LocalPlayer
-	
-	if player then
-		script.Parent.Text = "Hello "..player.Name.."!"
-	end
-end
-coroutine.wrap(UCVCV_fake_script)()
-local function NCTCYI_fake_script() -- GroupLink.LocalScript 
-	local script = Instance.new('LocalScript', GroupLink)
-
-	local plr = game.Players.LocalPlayer
-	local btn = script.Parent
-	local startGui = game:GetService("StarterGui")
-	
-	local Players = game:GetService("Players")
-	
-	local player = Players.LocalPlayer
-	local userId = player.UserId
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size60x60
-	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	
-	
-	
-	
-	
-	
-	btn.MouseButton1Up:Connect(function()
-		setclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
-		wait(0.2)
-		toclipboard("https://www.roblox.com/groups/11965777/xla-voidz#!/about")
-		wait(0.3)
-		startGui:SetCore("SendNotification",{
-			Title = " Group link copied to Clipboard!",
-			Text = "Close Gui and re-execute after you have joined the group.",
-			Icon = content,
-			Duration = 5,
-			Button1 = "OK",
-		})
-	end)
-end
-coroutine.wrap(NCTCYI_fake_script)()
-local function REZSQB_fake_script() -- EggEsp.EggEsp 
-	local script = Instance.new('LocalScript', EggEsp)
-
-	local Esp = "Eggs" -- change to folder of what u want an esp of
-	local Btn = script.Parent
-	local Tgl = false
-	local Loc = game.Workspace:FindFirstChild(Esp)
-	-- Name Text Gui
-	-- Instances:
-	local BillboardGui = Instance.new("BillboardGui")
-	local TextLabel = Instance.new("TextLabel")
-	--Properties:
-	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	BillboardGui.Active = true
-	BillboardGui.AlwaysOnTop = true
-	BillboardGui.LightInfluence = 1
-	BillboardGui.Size = UDim2.new(0, 150, 0, 35)
-	BillboardGui.StudsOffset = Vector3.new(0, 2, 0)
-	
-	TextLabel.Parent = BillboardGui
-	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-	TextLabel.BackgroundTransparency = 1
-	TextLabel.Size = UDim2.new(1, 0, 1, 0)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "Object"
-	TextLabel.TextColor3 = Color3.new(1, 0, 0)
-	TextLabel.TextScaled = true
-	TextLabel.TextSize = 14
-	TextLabel.TextStrokeTransparency = 0
-	TextLabel.TextWrapped = true
-	-- ESP Button Function
-	Btn.MouseButton1Click:Connect(function()
-		if Tgl == false then
-			Tgl = true
-			while Tgl == true do
-				for i,v in pairs(Loc:GetChildren()) do
-					local Dist = math.round((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Handle.Position).magnitude)
-					local High = Instance.new("Highlight")
-					local BillC = BillboardGui:Clone()
-					High.Parent = v
-					High.FillTransparency = 0.1
-					High.OutlineColor = Color3.new(255, 0, 255)
-					BillC.Parent =  v
-					BillC.Adornee = v
-					BillC.TextLabel.Text = "EGG,  Distance: " .. Dist
-				end
-				wait(3)
-				for i,v in pairs(Loc:GetDescendants()) do
-					if v:IsA("Highlight") or v:IsA("BillboardGui") then
-						v:Destroy()
-					end
-				end
-			end
-		elseif Tgl == true then
-			Tgl = false
-			for i,v in pairs(Loc:GetChildren()) do
-				for n,part in pairs(v:GetChildren()) do
-					if part:IsA("Highlight") or part:IsA("BillboardGui") then
-						part:Destroy()
-					end
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(REZSQB_fake_script)()
-local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript 
+coroutine.wrap(UKKMQV_fake_script)()
+local function ZEOCN_fake_script() -- MainFrame.CategoryOpeningScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local category = script.Parent.SecondaryFrame.Categorys
@@ -615,6 +866,8 @@ local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript
 	local miscs = script.Parent.SecondaryFrame.Pages.misc
 	local home = script.Parent.SecondaryFrame.Pages.HomePage
 	local homebutton = script.Parent.SecondaryFrame.Categorys.ListStuff.Home
+	local AutoPickupButton = script.Parent.SecondaryFrame.Categorys.ListStuff.AutoPickup
+	local AutoPickupPage = script.Parent.SecondaryFrame.Pages.AutoPickupPage
 	
 	
 	espbutton.MouseButton1Click:Connect(function()
@@ -623,6 +876,9 @@ local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript
 			miscs.Visible = false
 			if home.Visible == true then
 				home.Visible = false
+				if esp.Visible == true then
+					AutoPickupPage.Visible = false
+				end
 			end
 		end
 	end)
@@ -632,9 +888,13 @@ local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript
 			esp.Visible = false
 			if home.Visible == true then
 				home.Visible = false
+				if miscs.Visible == true then
+					AutoPickupPage.Visible = false
+				end
 			end
 		end
 	end)
+	
 	
 	homebutton.MouseButton1Click:Connect(function()
 		home.Visible = true
@@ -642,6 +902,22 @@ local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript
 			miscs.Visible = false
 			if home.Visible == true then
 				esp.Visible = false
+				if home.Visible == true then
+					AutoPickupPage.Visible = false
+				end
+			end
+		end
+	end)
+	
+	AutoPickupButton.MouseButton1Click:Connect(function()
+		AutoPickupPage.Visible = true
+		if AutoPickupPage.Visible == true then
+			esp.Visible = false
+			if AutoPickupPage.Visible == true then
+				miscs.Visible = false
+				if AutoPickupPage.Visible == true then 
+					home.Visible = false
+				end
 			end
 		end
 	end)
@@ -649,8 +925,8 @@ local function XIRUA_fake_script() -- MainFrame.CategoryOpeningScript
 	
 	
 end
-coroutine.wrap(XIRUA_fake_script)()
-local function XGPIB_fake_script() -- ESP.UiManager 
+coroutine.wrap(ZEOCN_fake_script)()
+local function ZCXBROW_fake_script() -- ESP.UiManager 
 	local script = Instance.new('LocalScript', ESP)
 
 	-- gui refrences
@@ -671,4 +947,4 @@ local function XGPIB_fake_script() -- ESP.UiManager
 		end
 	end]]
 end
-coroutine.wrap(XGPIB_fake_script)()
+coroutine.wrap(ZCXBROW_fake_script)()
